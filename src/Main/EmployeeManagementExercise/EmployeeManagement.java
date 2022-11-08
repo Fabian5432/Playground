@@ -1,6 +1,5 @@
-package Main;
+package Main.EmployeeManagementExercise;
 import Main.EmployeeManagementExercise.Base.Employee;
-import Main.EmployeeManagementExercise.EmployeeFactory;
 
 import java.text.NumberFormat;
 import java.util.regex.Matcher;

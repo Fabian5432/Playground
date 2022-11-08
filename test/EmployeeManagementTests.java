@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
-import static  org.junit.jupiter.api.Assertions.*;
-import Main.EmployeeManagement;
+import static org.junit.jupiter.api.Assertions.*;
+import Main.EmployeeManagementExercise.EmployeeManagement;
 
 
 public class EmployeeManagementTests {
