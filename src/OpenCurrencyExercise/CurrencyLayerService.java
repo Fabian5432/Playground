@@ -7,6 +7,7 @@ import retrofit2.Retrofit;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class CurrencyLayerService implements ICurrencyLayerService{
 
@@ -23,6 +24,12 @@ public class CurrencyLayerService implements ICurrencyLayerService{
         this.currencyLayerApi = retrofit.create(ICurrencyLayerApi.class);
     }
 
+    public String GetCurrentQuate(String quoteName)
+    {
+        var quate = GetAllQuotes().stream().filter(x->x.getQuatesName().contains(quoteName)).findFirst().get();
+        System.out.println(quate.getQuatesValue());
+        return quate.getQuatesValue();
+    }
     @Override
     public ArrayList<QuotesModel> GetAllQuotes() {
         Call<ResponseBody> response = currencyLayerApi.getAllQuates(accessKey);

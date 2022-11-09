@@ -1,6 +1,6 @@
-package Main.EmployeeManagementExercise.Models;
+package EmployeeManagementExercise.Models;
 
-import Main.EmployeeManagementExercise.Base.Employee;
+import EmployeeManagementExercise.Base.Employee;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

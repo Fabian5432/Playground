@@ -1,4 +1,4 @@
-package Main.EmployeeManagementExercise.Base;
+package EmployeeManagementExercise.Base;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

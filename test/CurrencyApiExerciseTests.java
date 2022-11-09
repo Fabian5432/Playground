@@ -36,4 +36,11 @@ public class CurrencyApiExerciseTests {
             assertNotNull(quate.getQuatesValue());
         }
     }
+    @Test
+    public void ShouldReturnUSDQuate()
+    {
+        CurrencyLayerService currencyLayerService = new CurrencyLayerService("980b4fe950b3d8d23a5a6eef697865af");
+        String actualValue = currencyLayerService.GetCurrentQuate("USD");
+        assertNotNull(actualValue);
+    }
 }

@@ -1,10 +1,11 @@
-package Main.EmployeeManagementExercise;
+package EmployeeManagementExercise;
 
-import Main.EmployeeManagementExercise.Base.Employee;
-import Main.EmployeeManagementExercise.Models.Analyst;
-import Main.EmployeeManagementExercise.Models.CEO;
-import Main.EmployeeManagementExercise.Models.Manager;
-import Main.EmployeeManagementExercise.Models.Programmer;
+import EmployeeManagementExercise.Base.Employee;
+import EmployeeManagementExercise.Models.Analyst;
+import EmployeeManagementExercise.Models.CEO;
+import EmployeeManagementExercise.Models.Manager;
+import EmployeeManagementExercise.Models.Programmer;
+
 
 import java.util.regex.Matcher;
 
