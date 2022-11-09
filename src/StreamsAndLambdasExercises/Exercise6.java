@@ -1,11 +1,11 @@
-package Streams_and_lambdas;
+package StreamsAndLambdasExercises;
 
 import java.time.Year;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
-public class Exercise5 {
+public class Exercise6 {
     record Car(String make, String model, Year year){}
 
     public static void main(String[] args) {
@@ -16,8 +16,11 @@ public class Exercise5 {
         cars.add(new Car("Tesla", "Y", Year.of(2017)));
         cars.add(new Car("Tesla", "Roadster", Year.of(2009)));
 
-        cars.stream()
-            .sorted(Comparator.comparing(Car::model).reversed())
-            .forEach(System.out::println);
+        StringBuilder sb = new StringBuilder();
+
+        Optional<String> models = cars.stream()
+                .map(Car::model)
+                .reduce((a, b) -> a.concat(", ").concat(b));
+        System.out.println(models.get());
     }
 }

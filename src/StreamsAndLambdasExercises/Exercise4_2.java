@@ -1,12 +1,9 @@
-package Streams_and_lambdas;
+package StreamsAndLambdasExercises;
 
 import java.math.BigDecimal;
-import java.text.NumberFormat;
 import java.time.Year;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.reducing;
 
 public class Exercise4_2 {

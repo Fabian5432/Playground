@@ -11,5 +11,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="junit.jupiter" level="project" />
     <orderEntry type="library" name="squareup.retrofit2.adapter.guava" level="project" />
+    <orderEntry type="library" name="json" level="project" />
   </component>
 </module>

@@ -1,4 +1,4 @@
-package Streams_and_lambdas;
+package StreamsAndLambdasExercises;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
@@ -6,8 +6,6 @@ import java.time.Year;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
 

@@ -1,10 +1,12 @@
-package Streams_and_lambdas;
+package StreamsAndLambdasExercises;
 
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Exercise2 {
+import static java.util.Comparator.comparing;
+
+public class Exercise5_1 {
     record Car(String make, String model, Year year){}
 
     public static void main(String[] args) {
@@ -16,7 +18,11 @@ public class Exercise2 {
         cars.add(new Car("Tesla", "Roadster", Year.of(2009)));
 
         cars.stream()
-                .filter(c -> c.year.isAfter(Year.of(2014)))
+                .sorted(
+                    comparing(Car::make)        // notice I've statically imported 'comparing' here
+                    .thenComparing(Car::model).reversed()
+                    .thenComparing(Car::year)
+                )
                 .forEach(System.out::println);
     }
 }
